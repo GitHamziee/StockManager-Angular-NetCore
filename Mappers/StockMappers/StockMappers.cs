@@ -20,7 +20,7 @@ namespace API.Mappers.StockMappers
             };
         }
 
-        public static Stock ToStockFromCreateDto(this CreateStockRequestDto stockRequestDto)
+        public static Stock MapToStock(this CreateStockRequestDto stockRequestDto)
         {
 
             return new Stock
@@ -35,6 +35,17 @@ namespace API.Mappers.StockMappers
             };
 
         }
+
+        public static void UpdateFromDto(this Stock stock, UpdateStockDto dto)
+        {
+            stock.Symbol = dto.Symbol;
+            stock.CompanyName = dto.CompanyName;
+            stock.Purchase = dto.Purchase;
+            stock.LastDiv = dto.LastDiv;
+            stock.Industry = dto.Industry;
+            stock.MarketCap = dto.MarketCap;
+        }
+
 
     }
 }
