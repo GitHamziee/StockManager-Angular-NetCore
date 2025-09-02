@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "API.Controllers.CommentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Comment/get-all-comments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CommentController",
+    "Method": "GetByID",
+    "RelativePath": "api/Comment/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.StockController",
     "Method": "GetAll",
     "RelativePath": "api/stock",
